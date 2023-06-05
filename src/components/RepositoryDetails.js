@@ -5,7 +5,7 @@ import { getRepoDetails } from "./api";
 
 const { Meta } = Card;
 
-const RepositoryDetails = ({ owner, repoName }) => {
+const RepositoryDetails = () => {
   const { owner: urlOwner, repoName: urlRepoName } = useParams();
   const [repo, setRepo] = useState({});
   const [loading, setLoading] = useState(true);
